@@ -7,10 +7,11 @@ using _19T1021067.DomainModels;
 using _19T1021067.BusinessLayers;
 namespace _19T1021067.Web.Controllers
 {
+    [Authorize]
     public class CustomerController : Controller
     {
         private const string CUSTOMER_SEARCH = "CustomerSearchCondition";
-        private const int PAGE_SIZE = 5;
+        private const int PAGE_SIZE = 10;
         // GET: Customer
         ///// <summary>
         ///// 

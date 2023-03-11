@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace _19T1021067.Web.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
         private const string SUPPLIER_SEARCH = "EmployeeSearchCondition";
@@ -117,7 +118,7 @@ namespace _19T1021067.Web.Controllers
             if (string.IsNullOrWhiteSpace(data.Email))
                 ModelState.AddModelError(nameof(data.Email), "*");
             data.Notes = data.Notes?? "";
-            data.Photo = data.Photo?? "";
+            data.Photo = data.Photo?? "Images/Employees/user8-12x128.jpg";
 
             
             if (ModelState.IsValid == false)
@@ -127,8 +128,8 @@ namespace _19T1021067.Web.Controllers
             }
             if(uploadPhoto != null)
             {
-                string path = Server.MapPath("~/Images/Employees");
                 string fileName = $"{DateTime.Now.Ticks}_{uploadPhoto.FileName}";
+                string path = Server.MapPath("~/Images/Employees");      
                 string filePath = System.IO.Path.Combine(path, fileName);
                 uploadPhoto.SaveAs(filePath);
                 data.Photo = $"Images/Employees/{fileName}";

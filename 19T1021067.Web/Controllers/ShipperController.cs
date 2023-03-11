@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using _19T1021067.DomainModels;
 namespace _19T1021067.Web.Controllers
 {
+    [Authorize]
     public class ShipperController : Controller
     {
         private const string SHIPPER_SEARCH = "ShipperSearchCondition";

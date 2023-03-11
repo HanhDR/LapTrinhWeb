@@ -10,6 +10,7 @@ using System.Web.UI;
 
 namespace _19T1021067.Web.Controllers
 {
+    [Authorize]
     public class SupplierController : Controller
     {
         private const string SUPPLIER_SEARCH = "SupplierSearchCondition";

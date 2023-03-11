@@ -7,25 +7,25 @@
 
         <form class="form-horizontal" action="~/Employee/Delete/@Model.EmployeeID" method="post">
             <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Tên:</label>
+                <label class="control-label col-sm-2" >Tên:</label>
                 <div class="col-sm-10">
                     <p class="form-control-static">@Model.LastName</p>
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Họ:</label>
+                <label class="control-label col-sm-2">Họ:</label>
                 <div class="col-sm-10">
                     <p class="form-control-static">@Model.FirstName</p>
                 </div>
             </div><div class="form-group">
-                <label class="control-label col-sm-2" for="email">Ngày sinh:</label>
+                <label class="control-label col-sm-2" >Ngày sinh:</label>
                 <div class="col-sm-10">
                     <p class="form-control-static">@Model.BirthDate.ToString("dd-MM-yyyy")</p>
                 </div>
             </div>
 
             <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Ghi chú:</label>
+                <label class="control-label col-sm-2" >Ghi chú:</label>
                 <div class="col-sm-10">
                     <p class="form-control-static">@Model.Notes</p>
                 </div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Ảnh:</label>
+                <label class="control-label col-sm-2" >Ảnh:</label>
                 <div class="col-sm-10">
                     <p class="form-control-static">@Model.Photo</p>
                     <img id="Photo"src="~/@Model.Photo"style="width:100px ;height:100px"/>

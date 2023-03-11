@@ -138,8 +138,13 @@
     <Compile Include="Models\CategorySearchOutput.cs" />
     <Compile Include="Models\CustomerSearchOutput.cs" />
     <Compile Include="Models\EmployeeSearchOutput.cs" />
+    <Compile Include="Models\OrderSearchIntput.cs" />
+    <Compile Include="Models\OrderSearchOutput.cs" />
     <Compile Include="Models\PagigationSearchInput.cs" />
     <Compile Include="Models\PaginationSearchOutput.cs" />
+    <Compile Include="Models\ProductEditModel.cs" />
+    <Compile Include="Models\ProductSearchInput.cs" />
+    <Compile Include="Models\ProductSearchOutput.cs" />
     <Compile Include="Models\ShipperSearchOutPut.cs" />
     <Compile Include="Models\SupplierSearchOutput.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -153,6 +158,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Employees\user8-128x128.jpg" />
+    <Content Include="Images\Products\user8-128x128.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -6509,7 +6516,6 @@
     <Content Include="Views\Shipper\Index.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Order\Index.cshtml" />
     <Content Include="Views\Order\Create.cshtml" />
     <Content Include="Views\Supplier\Edit.cshtml" />
     <Content Include="Views\Supplier\Delete.cshtml" />
@@ -6526,10 +6532,22 @@
     <Content Include="Views\Category\Search.cshtml" />
     <Content Include="Views\Customer\Search.cshtml" />
     <Content Include="Views\Employee\Search.cshtml" />
+    <Content Include="Views\Account\Edit.cshtml" />
+    <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\Product\Attribute.cshtml" />
+    <Content Include="Views\Product\Photo.cshtml" />
+    <Content Include="Views\Product\Delete.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\Product\Search.cshtml" />
+    <Content Include="Views\Order\Index.cshtml" />
+    <Content Include="Views\Order\Details.cshtml" />
+    <Content Include="Views\Order\EditDetail.cshtml" />
+    <Content Include="Views\Order\SearchProducts.cshtml" />
+    <Content Include="Views\Order\Shipping.cshtml" />
+    <Content Include="Views\Order\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\Employees\" />
     <Folder Include="Views\Test\" />
   </ItemGroup>
   <ItemGroup>

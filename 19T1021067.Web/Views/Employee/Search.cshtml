@@ -11,7 +11,7 @@
     <div class="row" style="display:flex;flex-wrap:wrap;">
         @foreach (var item in Model.Data)
         {
-            <div class="box box-primary" style="width:350px;border: 1px solid rgba(0, 0, 0, 0.08);margin: 0 4px;">
+            <div class="box box-primary" style="width:350px;border: 1px solid rgba(0, 0, 0, 0.08);margin: 8px 8px;">
                 <div class="box-body box-profile" style="position:relative;">
                     <img class="profile-user-img img-responsive img-circle" src="@item.Photo" alt="User profile picture">
                     <div class="action-profile" style="position:absolute; top: 6px; right:20px;">
@@ -33,7 +33,7 @@
                         <li class="list-group-item">
                             <b>Email</b> <p class="pull-right">@item.Email</p>
                         </li>
-                        <li class="list-group-item">
+                        <li class="list-group-item" style="border:none">
                             <b>Notes</b> <p class="">@item.Notes</p>
                         </li>
                     </ul>
